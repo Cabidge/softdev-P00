@@ -14,20 +14,22 @@
     {% if error %}
     <h2 style="color: red;">Error: {{error}}</h2>
     {% endif %}
-    <h3>
-      Enter your username below to proceed.
-    </h3>
-    <form action="/login" method="POST">
-      Username:
-      <input type="text" name="username">
-      <br>
-      Password:
-      <input type="password" name="password">
-      <br>
-      <input type="submit" name="sub1" value="Login">
-      <br>
+    <div class="form-container">
+      <h3>
+        Enter your username below to proceed.
+      </h3>
+      <form action="/login" method="POST">
+        Username:
+        <input type="text" name="username">
+        <br>
+        Password:
+        <input type="password" name="password">
+        <br>
+        <input type="submit" name="sub1" value="Login">
+        <br>
       <a href="/signup">Register</a>
-    </form>
+      </form>
+    </div>
     <br>
   </body>
 
