@@ -14,24 +14,26 @@
     {% if error %}
     <h2 style="color: red;">Error: {{error}}</h2>
     {% endif %}
-    <h3>
-      Create your account for Journal Square, a newfangled blog, below!
-    </h3>
-    <form action="/signup" method="POST">
-      Display Name:
-      <input type="text" name="displayName">
+    <div class="form-container shadow">
+      <h3>
+        Create your account for Journal Square, a newfangled blog, below!
+      </h3>
+      <form action="/signup" method="POST">
+        Display Name:
+        <input type="text" name="displayName">
+        <br>
+        Username:
+        <input type="text" name="username">
+        <br>
+        Password:
+        <input type="password" name="password">
+        <br>
+        <input class="primary-btn" type="submit" name="sub1" value="Register">
+        <br>
+        <a href="/login">Login</a>
+      </form>
       <br>
-      Username:
-      <input type="text" name="username">
-      <br>
-      Password:
-      <input type="password" name="password">
-      <br>
-      <input type="submit" name="sub1" value="Register">
-      <br>
-      <a href="/login">Login</a>
-    </form>
-    <br>
+    </div>
   </body>
 
 </html>

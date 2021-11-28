@@ -1,5 +1,22 @@
+:root {
+  ---primary-100: #f3f3f0;
+  ---primary-200: #E0E2DB;
+  ---primary-300: #D2D4C8;
+  ---primary-800: #2E3532;
+  ---primary-900: #1d1e1f;
+
+  ---secondary-300: #cdf3b1;
+  ---secondary-200: #a5eb90;
+  ---secondary-700: rgb(50, 114, 62);
+
+  ---accent-400: #b63737;
+  ---accent-600: #8B2635;
+}
+
 body {
-  background-color: #DFF3E3;
+  font-family: "arial";
+
+  background-color: var(---primary-200);
   margin: 18px;
   display: flex;
   flex-direction: column;
@@ -11,27 +28,64 @@ h1 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: var(---secondary-700);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================================
+   Forms
+   ========================================================================= */
+
 .form-container {
-  background-color: #BEE5BF;
-  border: black solid 1px;
+  background-color: var(---primary-100);
   border-radius: 8px;
-  padding: 16px;
+  padding: 28px;
+}
+
+.form-container input {
+  margin-bottom: 12px;
 }
 
 .form-container h3 {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
-form {
+.form-container form {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+}
+
+input {
+  height: 2rem;
+
+  padding-left: 10px;
+  font-size: medium;
+
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 input[type=text], input[type=password] {
-  background-color: #BEE5BF;
-  border: none;
-  border-bottom: 2px solid black;
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.primary-btn {
+  background-color: var(---secondary-300);
+}
+
+.primary-btn:hover {
+  background-color: var(---secondary-200);
+}
+
+/* =========================================================================
+   Utility
+   ========================================================================= */
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
