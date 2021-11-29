@@ -23,16 +23,18 @@
         <h2 style="color: red;">Error: {{error}}</h2>
         {% endif %}
         {% for blog in blogs %}
-        <hr>
-        <a href="/post/{{blog[0]}}"><h2>{{ blog[3] }}</h2></a>
-            {% if blog[5] != blog[2] %}
-            Posted: {{blog[2]}} (Edited: {{blog[5]}})
-            {% else %}
-            Posted: {{blog[2]}}
-            {% endif %}
-            <br>
-            <a href = "/editBlog/{{blog[0]}}">Edit</a>
-            <a href = "/deleteBlog/{{blog[0]}}">Delete</a>
+            <hr>
+            <article class="container shadow">
+                <a href="/post/{{blog[0]}}"><h2>{{ blog[3] }}</h2></a>
+                {% if blog[5] != blog[2] %}
+                Posted: {{blog[2]}} (Edited: {{blog[5]}})
+                {% else %}
+                Posted: {{blog[2]}}
+                {% endif %}
+                <br>
+                <a href = "/editBlog/{{blog[0]}}">Edit</a>
+                <a href = "/deleteBlog/{{blog[0]}}">Delete</a>
+            </article>
         {% endfor %}
     </body>
 </html>

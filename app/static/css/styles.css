@@ -72,14 +72,6 @@ nav {
 /* =========================================================================
    Forms
    ========================================================================= */
-
-.form-container {
-  background-color: var(---primary-100);
-  border-radius: 8px;
-  padding: 28px;
-  margin-bottom: 8rem;
-}
-
 .form-container input {
   margin-bottom: 12px;
 }
@@ -119,6 +111,13 @@ input[type=text], input[type=password] {
 /* =========================================================================
    Utility
    ========================================================================= */
+.container {
+  background-color: var(---primary-100);
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 8rem;
+}
+
 .shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

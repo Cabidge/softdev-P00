@@ -22,7 +22,7 @@
       {% if error %}
       <h2 style="color: red;">Error: {{error}}</h2>
       {% endif %}
-      <form action="/createPosts" method="POST">
+      <form class="form-container container shadow" action="/createPosts" method="POST">
         Title:
         <br>
         <input type="text" name="title">
@@ -31,7 +31,7 @@
         <br>
         <textarea name="contents"></textarea>
         <br>
-        <input type = "submit" name = "create" value = "Create Post">
+        <input class="primary-btn" type = "submit" name = "create" value = "Create Post">
     </form>
     </body>
 </html>

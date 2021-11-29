@@ -19,7 +19,7 @@
     {% if error %}
     <h2 style="color: red">Error: {{error}}</h2>
     {% endif %}
-    <h3 class="form-container shadow">
+    <h3 class="form-container container shadow">
       <form action="/search" method="POST">
         <label for="options">Search By:</label>
         <select name="options" id="options">
@@ -35,8 +35,10 @@
     <h2>Most Recent Posts</h2>
     {% for blog in blogs %}
     <hr />
-    <a href="/post/{{blog[0]}}"><h2>{{ blog[3] }}</h2></a>
-    by {{ blog[1] }}
+    <article class="container shadow">
+      <a href="/post/{{blog[0]}}"><h2>{{ blog[3] }}</h2></a>
+      by {{ blog[1] }}
+    </article>
     <br />
     <br />
     <br />

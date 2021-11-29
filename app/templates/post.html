@@ -10,7 +10,6 @@
         <link href ="../static/css/styles.css" rel ="stylesheet" type ="text/css">
     </head>
 
-    <>
       <header class="shadow">
         <nav>
           <a href="/">Home</a>
@@ -23,17 +22,19 @@
           {{title}}
         </h1>
       </header>
-      <p>By {{ displayName }} @{{author}}</p>
-      <small>
-        {% if date != edit %}
-        {{date}} (Edited: {{edit}})
-        {% else %}
-        {{date}}
-        {% endif %}
-      </small>
-      <br>
-      <br>
-      <p>{{content}}</p>
+      <div class="container shadow">
+        <p>By {{ displayName }} @{{author}}</p>
+        <small>
+          {% if date != edit %}
+          {{date}} (Edited: {{edit}})
+          {% else %}
+          {{date}}
+          {% endif %}
+        </small>
+        <br>
+        <br>
+        <p>{{content}}</p>
+      </div>
       {% else %}
         </header>
         {% if error %}

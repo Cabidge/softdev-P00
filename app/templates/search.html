@@ -22,7 +22,7 @@
         {% if error %}
         <h2 style="color: red;">Error: {{error}}</h2>
         {% endif %}
-        <h3>
+        <h3 class="form-container container shadow">
             <form action="/search" method="POST">
                 <label for="options">Search By:</label>
                 <select name = "options" id = "options">
@@ -39,8 +39,10 @@
         <h1>Blog Posts</h1>
         {% endif %}
         {% for blog in blogs %}
-        <h2><a href ="/post/{{blog[0]}}">{{ blog[3] }}</a></h2>
-        by {{ blog[1] }}
+        <article class="container shadow">
+          <h2><a href ="/post/{{blog[0]}}">{{ blog[3] }}</a></h2>
+          by {{ blog[1] }}
+        </article>
         <br>
         <br>
         {% endfor %}
@@ -48,7 +50,9 @@
         <h1>User Blogs</h1>
         {% endif %}
         {% for user in users %}
-        <h2><a href ="/blog/{{user[1]}}">{{ user[2] }}</h2> @{{ user[1] }}</a>
+        <article class="container shadow">
+          <h2><a href ="/blog/{{user[1]}}">{{ user[2] }}</h2> @{{ user[1] }}</a>
+        </article>
         <br>
         <br>
         {% endfor %}
