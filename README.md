@@ -10,7 +10,7 @@
 ## Notes
 - The website was fully functional when the CSS was stripped away.
 - We can have CSS variables by declaring them in ```:root{ --var: #FFFFFF }``` and accessing them using ```var(<var_name>)```
-- We can style individual input types of a form using ``input[type=<input_type>] { }```
+- We can style individual input types of a form using ```input[type=<input_type>] { }```
 - The gap property in CSS is a shorthand for row-gap and column-gap, specifying the size of gutters, which is the space between rows and columns within grid, flex, and multi-column layouts.
 
 ## How to use
